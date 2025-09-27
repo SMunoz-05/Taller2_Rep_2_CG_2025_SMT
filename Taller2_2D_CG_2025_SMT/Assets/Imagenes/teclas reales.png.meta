@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7419dc4e9f9656d4f93673126c8dc54e
+guid: bf83bd5896c2ce8479e4628990083dfc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4745141740373887917
-    second: "Dise\xF1o_sin_t\xEDtulo-removebg-preview_0"
+      213: 1687292872307976921
+    second: teclas reales_0
+  - first:
+      213: -7714010178271061237
+    second: teclas reales_1
+  - first:
+      213: -4242297385223271274
+    second: teclas reales_2
+  - first:
+      213: 2020222265208208101
+    second: teclas reales_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Dise\xF1o_sin_t\xEDtulo-removebg-preview_0"
+      name: teclas reales_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 136
-        width: 349
-        height: 129
+        x: 201
+        y: 199
+        width: 151
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 354b22c5abed52eb0800000000000000
-      internalID: -4745141740373887917
+      spriteID: 9da27fd7de77a6710800000000000000
+      internalID: 1687292872307976921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teclas reales_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bd76a0d9452f490800000000000000
+      internalID: -7714010178271061237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teclas reales_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 151
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cc23a31055025c0800000000000000
+      internalID: -4242297385223271274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teclas reales_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 0
+        width: 148
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eaf1155275490c10800000000000000
+      internalID: 2020222265208208101
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Dise\xF1o_sin_t\xEDtulo-removebg-preview_0": -4745141740373887917
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
