@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torch3_2_0: 6407598815226412805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

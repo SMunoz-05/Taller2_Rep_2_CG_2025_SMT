@@ -1698,7 +1698,69 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knight_1_spritelist_0: 816005500860490676
+      knight_1_spritelist_1: -5186794004134585380
+      knight_1_spritelist_10: 9082794390574139386
+      knight_1_spritelist_11: -6426309510787042488
+      knight_1_spritelist_12: 5014685440941973828
+      knight_1_spritelist_13: 3624155038590606993
+      knight_1_spritelist_14: 8743639474557578457
+      knight_1_spritelist_15: -6032239496800557074
+      knight_1_spritelist_16: -2770639891371223877
+      knight_1_spritelist_17: -8800916987192818142
+      knight_1_spritelist_18: 4405960069282978855
+      knight_1_spritelist_19: -5444827460358063059
+      knight_1_spritelist_2: 194178779578971489
+      knight_1_spritelist_20: 2167819701296143100
+      knight_1_spritelist_21: 8086519367749148510
+      knight_1_spritelist_22: 8425538086356201160
+      knight_1_spritelist_23: -3575125051210617776
+      knight_1_spritelist_24: -420674837617140749
+      knight_1_spritelist_25: -3991637846234113435
+      knight_1_spritelist_26: 1325904534726772389
+      knight_1_spritelist_27: 5219884340971611092
+      knight_1_spritelist_28: -3563069958333773419
+      knight_1_spritelist_29: 4687863127516077277
+      knight_1_spritelist_3: 4658408026482901127
+      knight_1_spritelist_30: 2293406913337059954
+      knight_1_spritelist_31: 6429593197730720785
+      knight_1_spritelist_32: -262355617663791286
+      knight_1_spritelist_33: -5924413721485516690
+      knight_1_spritelist_34: 3064462306322015068
+      knight_1_spritelist_35: -419887883521121258
+      knight_1_spritelist_36: 6121419294062790616
+      knight_1_spritelist_37: -1964351993203463730
+      knight_1_spritelist_38: 7520271442537970155
+      knight_1_spritelist_39: -8315991233321398519
+      knight_1_spritelist_4: 8196306795595315206
+      knight_1_spritelist_40: -1200537090586533994
+      knight_1_spritelist_41: -3650088652921935135
+      knight_1_spritelist_42: 115939621468272295
+      knight_1_spritelist_43: -3729042020384294206
+      knight_1_spritelist_44: 3884460101629754416
+      knight_1_spritelist_45: 6931556671549937289
+      knight_1_spritelist_46: 1759322903051637843
+      knight_1_spritelist_47: -631120878468660057
+      knight_1_spritelist_48: -1614519824196931492
+      knight_1_spritelist_49: 698305467356043514
+      knight_1_spritelist_5: -4621568300200140008
+      knight_1_spritelist_50: 7002973154911701921
+      knight_1_spritelist_51: -2904355326297689232
+      knight_1_spritelist_52: 8077413321698274146
+      knight_1_spritelist_53: -4132217540076534802
+      knight_1_spritelist_54: 1435725772423286078
+      knight_1_spritelist_55: -3184486792751042583
+      knight_1_spritelist_56: -2042866371300097812
+      knight_1_spritelist_57: 821296296427796692
+      knight_1_spritelist_58: 1123231321188154811
+      knight_1_spritelist_59: 3444240870827215765
+      knight_1_spritelist_6: -5979270515080014707
+      knight_1_spritelist_60: -7732522244914249229
+      knight_1_spritelist_61: -6270276996089578445
+      knight_1_spritelist_7: -4796252347268622910
+      knight_1_spritelist_8: 3364729962078087792
+      knight_1_spritelist_9: 404282175039221702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

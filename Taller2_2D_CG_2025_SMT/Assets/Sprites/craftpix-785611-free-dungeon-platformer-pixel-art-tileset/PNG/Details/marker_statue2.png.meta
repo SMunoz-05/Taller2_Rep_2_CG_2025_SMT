@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      marker_statue2_0: 2378236316411617376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

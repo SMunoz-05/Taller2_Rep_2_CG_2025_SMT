@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stalagnate1_0: 6123527262673086732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
