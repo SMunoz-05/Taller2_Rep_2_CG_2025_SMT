@@ -72,8 +72,14 @@ public class Player : MonoBehaviour
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Hit"));
         float hitAnimDuration = animator.GetCurrentAnimatorStateInfo(0).length;
         yield return new WaitForSeconds(hitAnimDuration);
+
+        // SUMA EL TIEMPO ANTES DE REINICIAR
+        GameManager.Instance.RegistrarTiempoUsadoNivelActual();
+
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void PlayerDamaged()
     {
         animator.SetTrigger("Hit");
@@ -102,29 +108,12 @@ public class Player : MonoBehaviour
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
 
-        if (collision.transform.CompareTag("Spikes"))
+        if (collision.transform.CompareTag("Damage"))
         {
             PlayerDamaged();
         }
 
-        if (collision.transform.CompareTag("Barrel"))
 
-        {
-            audioSource.PlayOneShot(barrelClip);
-            Vector2 knockbackDir = (rb2D.position - (Vector2)collision.transform.position).normalized;
-            rb2D.linearVelocity = Vector2.zero;
-            rb2D.AddForce(knockbackDir * 3, ForceMode2D.Impulse);
-
-            BoxCollider2D[] collaiders = collision.gameObject.GetComponents<BoxCollider2D>();
-
-            foreach (BoxCollider2D col in collaiders)
-            {
-                col.enabled = false;
-            }
-
-            collision.GetComponent<Animator>().enabled = true;
-            Destroy(collision.gameObject, 0.5f);
-        }
 
     }
 }

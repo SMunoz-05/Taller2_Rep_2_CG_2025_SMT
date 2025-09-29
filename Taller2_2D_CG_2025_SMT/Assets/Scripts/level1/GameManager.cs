@@ -138,6 +138,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("El puntaje total fue de : " + score + " puntos");
     }
 
+    public void RegistrarTiempoUsadoNivelActual()
+    {
+        totalTimeUsed += totalTime - timerTime;
+    }
+
     public void SetTimerUI(TMP_Text min, TMP_Text sec, TMP_Text sec100)
     {
         timerMinutes = min;

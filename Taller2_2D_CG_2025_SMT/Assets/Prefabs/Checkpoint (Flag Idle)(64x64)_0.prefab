@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4839820931258923596
+--- !u!1 &7422048020525564682
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4673683193866300283}
-  - component: {fileID: 6006814446086250388}
-  - component: {fileID: 7550733688525627609}
-  - component: {fileID: 8261499752941192446}
-  - component: {fileID: 2460750658923305178}
+  - component: {fileID: 7454372939825834572}
+  - component: {fileID: 8769794936023209768}
+  - component: {fileID: 6315590411647952054}
+  - component: {fileID: 4925312085640978699}
+  - component: {fileID: 7217224292330288486}
   m_Layer: 0
   m_Name: Checkpoint (Flag Idle)(64x64)_0
   m_TagString: Untagged
@@ -20,28 +20,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4673683193866300283
+--- !u!4 &7454372939825834572
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839820931258923596}
+  m_GameObject: {fileID: 7422048020525564682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.841, y: 0.006, z: 0}
+  m_LocalPosition: {x: 5.154, y: -0.779, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6006814446086250388
+--- !u!212 &8769794936023209768
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839820931258923596}
+  m_GameObject: {fileID: 7422048020525564682}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -90,14 +90,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7550733688525627609
+--- !u!95 &6315590411647952054
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839820931258923596}
+  m_GameObject: {fileID: 7422048020525564682}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9685b9bc193b9404c9c66f8c7e28b5f8, type: 2}
@@ -112,25 +112,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8261499752941192446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839820931258923596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4835c4b05d3e294ba06ca7408fc1499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &2460750658923305178
+--- !u!61 &4925312085640978699
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4839820931258923596}
+  m_GameObject: {fileID: 7422048020525564682}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -158,7 +146,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.08999026, y: -0.108915314}
+  m_Offset: {x: -0.08402133, y: -0.0979656}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -168,5 +156,17 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.03471327, y: 0.3619322}
+  m_Size: {x: 0.035636425, y: 0.38781762}
   m_EdgeRadius: 0
+--- !u!114 &7217224292330288486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422048020525564682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8549510e94aba34e9496345714c493f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
