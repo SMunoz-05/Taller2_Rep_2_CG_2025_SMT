@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: bf83bd5896c2ce8479e4628990083dfc
+guid: 44f11aa61cc3c43449873fda60bd1995
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1687292872307976921
-    second: teclas reales_0
-  - first:
-      213: -7714010178271061237
-    second: teclas reales_1
-  - first:
-      213: -4242297385223271274
-    second: teclas reales_2
-  - first:
-      213: 2020222265208208101
-    second: teclas reales_3
+      213: -1532784431134144911
+    second: Tile_14_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: teclas reales_0
+      name: Tile_14_0
       rect:
         serializedVersion: 2
-        x: 201
-        y: 199
-        width: 151
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9da27fd7de77a6710800000000000000
-      internalID: 1687292872307976921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teclas reales_1
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 19
         y: 0
-        width: 150
-        height: 154
+        width: 222
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0bd76a0d9452f490800000000000000
-      internalID: -7714010178271061237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teclas reales_2
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 0
-        width: 151
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69cc23a31055025c0800000000000000
-      internalID: -4242297385223271274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: teclas reales_3
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 0
-        width: 148
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5eaf1155275490c10800000000000000
-      internalID: 2020222265208208101
+      spriteID: 17600015ea47abae0800000000000000
+      internalID: -1532784431134144911
       vertices: []
       indices: 
       edges: []
@@ -235,11 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      teclas reales_0: 1687292872307976921
-      teclas reales_1: -7714010178271061237
-      teclas reales_2: -4242297385223271274
-      teclas reales_3: 2020222265208208101
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
