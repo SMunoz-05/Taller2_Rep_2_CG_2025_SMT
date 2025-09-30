@@ -6,16 +6,18 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-
+    [Header("Score System")]
     private int score = 0;
     public TMP_Text scoreText;
+    public int scorePerEnemy = 50; // Puntos por eliminar enemigo
 
+    [Header("Enemy Tracking")]
+    private int enemiesKilled = 0;
 
+    [Header("Timer Settings")]
     public float totalTime = 120f; 
     private float timerTime;
     private bool isRunning = false;
-
-
     private float totalTimeUsed = 0f;
 
     public TMP_Text timerMinutes;
@@ -23,13 +25,12 @@ public class GameManager : MonoBehaviour
     public TMP_Text timerSeconds100;
 
     public float TotalTimeUsed => totalTimeUsed;
+    public int EnemiesKilled => enemiesKilled;
 
     private void Awake()
     {
-
         if (Instance != null && Instance != this)
         {
-
             Destroy(gameObject);
             return;
         }
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
                 timerTime = 0f;
                 isRunning = false;
                 MostrarTiempo(timerTime);
-                Debug.Log("Se terminó el tiempo en nivel: " + SceneManager.GetActiveScene().name);
+                Debug.Log("Se terminÃ³ el tiempo en nivel: " + SceneManager.GetActiveScene().name);
             }
             else
             {
@@ -89,14 +90,13 @@ public class GameManager : MonoBehaviour
 
         if (nextIndex < SceneManager.sceneCountInBuildSettings)
         {
-
             SceneManager.LoadScene(nextIndex);
             ResetTimer();
             StartTimer();
         }
         else
         {
-            Debug.Log("No hay más escenas para cargar.");
+            Debug.Log("No hay mÃ¡s escenas para cargar.");
             MostrarTotalesFinales();
         }
     }
@@ -113,8 +113,20 @@ public class GameManager : MonoBehaviour
     public void ResetScore()
     {
         score = 0;
+        enemiesKilled = 0;
         if (scoreText != null)
             scoreText.text = score.ToString();
+    }
+
+    // NUEVO MÃ‰TODO: Para cuando el Enemy muere
+    public void OnEnemyKilled(Enemy enemy)
+    {
+        if (enemy == null) return;
+
+        enemiesKilled++;
+        AddScore(scorePerEnemy);
+        
+        Debug.Log($"Enemigo eliminado! Total: {enemiesKilled}, Score: {score}");
     }
 
     private void MostrarTiempo(float tiempo)
@@ -136,6 +148,7 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(totalTimeUsed % 60);
         Debug.Log("El tiempo total fue de : " + minutes + " minutos " + seconds + " segundos");
         Debug.Log("El puntaje total fue de : " + score + " puntos");
+        Debug.Log("Enemigos eliminados: " + enemiesKilled);
     }
 
     public void RegistrarTiempoUsadoNivelActual()
