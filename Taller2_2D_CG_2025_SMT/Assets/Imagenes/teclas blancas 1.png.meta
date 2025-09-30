@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: bf83bd5896c2ce8479e4628990083dfc
+guid: d884996132b79134f99ba546d61e6ac3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1687292872307976921
-    second: teclas reales_0
+      213: -7656924287163792419
+    second: teclas blancas 1_0
   - first:
-      213: -7714010178271061237
-    second: teclas reales_1
+      213: -6776266595085528665
+    second: teclas blancas 1_1
   - first:
-      213: -4242297385223271274
-    second: teclas reales_2
+      213: 6016822277300423681
+    second: teclas blancas 1_2
   - first:
-      213: 2020222265208208101
-    second: teclas reales_3
+      213: -5533495056754063965
+    second: teclas blancas 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,30 +131,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: teclas reales_0
+      name: teclas blancas 1_0
       rect:
         serializedVersion: 2
-        x: 201
-        y: 199
-        width: 151
-        height: 157
+        x: 64
+        y: 66
+        width: 62
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9da27fd7de77a6710800000000000000
-      internalID: 1687292872307976921
+      spriteID: dd38a8fcde32db590800000000000000
+      internalID: -7656924287163792419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: teclas reales_1
+      name: teclas blancas 1_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 150
-        height: 154
+        width: 59
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0bd76a0d9452f490800000000000000
-      internalID: -7714010178271061237
+      spriteID: 7a1d4981f6dd5f1a0800000000000000
+      internalID: -6776266595085528665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: teclas reales_2
+      name: teclas blancas 1_2
       rect:
         serializedVersion: 2
-        x: 201
+        x: 64
         y: 0
-        width: 151
-        height: 154
+        width: 62
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69cc23a31055025c0800000000000000
-      internalID: -4242297385223271274
+      spriteID: 10c06239bfb008350800000000000000
+      internalID: 6016822277300423681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: teclas reales_3
+      name: teclas blancas 1_3
       rect:
         serializedVersion: 2
-        x: 402
+        x: 131
         y: 0
-        width: 148
-        height: 154
+        width: 60
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5eaf1155275490c10800000000000000
-      internalID: 2020222265208208101
+      spriteID: 3a54bc740931533b0800000000000000
+      internalID: -5533495056754063965
       vertices: []
       indices: 
       edges: []
@@ -248,11 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      teclas reales_0: 1687292872307976921
-      teclas reales_1: -7714010178271061237
-      teclas reales_2: -4242297385223271274
-      teclas reales_3: 2020222265208208101
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
