@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      teclas reales_0: 1687292872307976921
+      teclas reales_1: -7714010178271061237
+      teclas reales_2: -4242297385223271274
+      teclas reales_3: 2020222265208208101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

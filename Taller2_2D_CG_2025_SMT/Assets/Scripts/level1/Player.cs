@@ -1,56 +1,77 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
+    [Header("Movement")]
     public float speed = 5;
+    public float jumpForce = 4;
     private Rigidbody2D rb2D;
-
     private float move;
 
-    public float jumpForce = 4;
+    [Header("Ground Check")]
     private bool isGrounded;
     public Transform groundCheck;
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
 
+    [Header("Health System")]
+    public int maxHealth = 3;
+    private int currentHealth;
+    public TMP_Text TextHealth; // Añade este text en el HUD
+
+    [Header("Components")]
     private Animator animator;
 
-
+    [Header("Collectibles")]
     public int coins;
     public int esmeralda;
     public TMP_Text TextCoins;
     public TMP_Text TextEsmeraldas;
+    public TMP_Text TextScore;
 
-    public AudioSource audioSource; 
+    [Header("Audio")]
+    public AudioSource audioSource;
     public AudioClip coinClip;
     public AudioClip barrelClip;
     public AudioClip esmeraldaClip;
+    public AudioClip damageClip; // Añade un clip de daño
 
+    [Header("Damage Settings")]
+    public float invincibilityTime = 1.5f;
+    private bool isInvincible = false;
+    
+    [Header("Combat")]
+    public float attackRange = 1.5f;
+    public int attackDamage = 25;
+    public float attackCooldown = 0.5f;
+    public LayerMask enemyLayer = 1 << 6;
+    private bool canAttack = true;
+
+    // Public properties
     public int Coins => coins;
     public int Esmeraldas => esmeralda;
-
-    public TMP_Text TextScore;
+    public int CurrentHealth => currentHealth;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        
+        // Initialize health
+        currentHealth = maxHealth;
+        UpdateHealthUI();
     }
-
 
     void Update()
     {
         move = Input.GetAxisRaw("Horizontal");
         rb2D.linearVelocity = new Vector2(move * speed, rb2D.linearVelocity.y);
 
-        if(move != 0 )
+        if (move != 0)
             transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
-        //Si el movimiento es 0 se cambia la escala, la cual transforma la orientacion que mira el mu�eco asignado. 
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -60,24 +81,137 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(move));
         animator.SetFloat("VerticalVelocity", rb2D.linearVelocity.y);
         animator.SetBool("IsGrounded", isGrounded);
+        
+        if (Input.GetKeyDown(KeyCode.Z) && canAttack)
+        {
+            Attack();
+        }
     }
+
+    private void Attack()
+    {
+        canAttack = false;
+    
+        // Animación de ataque
+        animator.SetTrigger("Attack");
+    
+        // Detectar enemigos en rango
+        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+    
+        foreach (Collider2D enemy in enemiesInRange)
+        {
+            Enemy enemyScript = enemy.GetComponent<Enemy>();
+            if (enemyScript != null && !enemyScript.IsDead)
+            {
+                enemyScript.TakeDamage(attackDamage);
+            }
+        }
+    
+        StartCoroutine(AttackCooldownCoroutine());
+    }
+
+    private IEnumerator AttackCooldownCoroutine()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+    
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer); 
-        // Lanza uan esfera que comprueba que esta colisionando con el floor de nuestra ui
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
     }
+
+    // MÉTODO PARA QUE EL ENEMIGO LLAME
+    public void TakeDamage(int damage)
+    {
+        // No recibir daño si está en invencibilidad
+        if (isInvincible) return;
+
+        currentHealth -= damage;
+        currentHealth = Mathf.Max(currentHealth, 0); // No bajar de 0
+
+        // Play damage sound
+        if (audioSource != null && damageClip != null)
+            audioSource.PlayOneShot(damageClip);
+
+        // Update UI
+        UpdateHealthUI();
+
+        // Visual feedback
+        animator.SetTrigger("Hit");
+
+        // Check if dead
+        if (currentHealth <= 0)
+        {
+            PlayerDeath();
+        }
+        else
+        {
+            // Start invincibility frames
+            StartCoroutine(InvincibilityCoroutine());
+        }
+    }
+
+    private IEnumerator InvincibilityCoroutine()
+    {
+        isInvincible = true;
+        
+        // Visual feedback - parpadeo
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        if (sprite != null)
+        {
+            float elapsed = 0f;
+            while (elapsed < invincibilityTime)
+            {
+                sprite.enabled = !sprite.enabled;
+                yield return new WaitForSeconds(0.1f);
+                elapsed += 0.1f;
+            }
+            sprite.enabled = true;
+        }
+        else
+        {
+            yield return new WaitForSeconds(invincibilityTime);
+        }
+        
+        isInvincible = false;
+    }
+
+    private void UpdateHealthUI()
+    {
+        if (TextHealth != null)
+        {
+            TextHealth.text = $"Health: {currentHealth}/{maxHealth}";
+        }
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, maxHealth); // No exceder el máximo
+        UpdateHealthUI();
+    }
+
+    private void PlayerDeath()
+    {
+        // Disable player controls
+        enabled = false;
+        
+        StartCoroutine(WaitAndRespawn());
+    }
+
+    public void PlayerDamaged()
+    {
+        // Este método lo mantienes para compatibilidad con Spikes
+        TakeDamage(1);
+    }
+
     private IEnumerator WaitAndRespawn()
     {
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Hit"));
         float hitAnimDuration = animator.GetCurrentAnimatorStateInfo(0).length;
         yield return new WaitForSeconds(hitAnimDuration);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    public void PlayerDamaged()
-    {
-        animator.SetTrigger("Hit");
-        StartCoroutine(WaitAndRespawn());
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -92,6 +226,7 @@ public class Player : MonoBehaviour
             GameManager.Instance.AddScore(100);
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
+        
         if (collision.transform.CompareTag("Esmeralda"))
         {
             audioSource.PlayOneShot(esmeraldaClip);
@@ -108,7 +243,6 @@ public class Player : MonoBehaviour
         }
 
         if (collision.transform.CompareTag("Barrel"))
-
         {
             audioSource.PlayOneShot(barrelClip);
             Vector2 knockbackDir = (rb2D.position - (Vector2)collision.transform.position).normalized;
@@ -125,6 +259,15 @@ public class Player : MonoBehaviour
             collision.GetComponent<Animator>().enabled = true;
             Destroy(collision.gameObject, 0.5f);
         }
+    }
 
+    // Para debugging
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+        }
     }
 }
