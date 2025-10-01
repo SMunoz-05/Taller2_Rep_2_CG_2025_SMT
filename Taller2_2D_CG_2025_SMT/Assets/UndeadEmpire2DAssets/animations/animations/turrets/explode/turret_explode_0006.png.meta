@@ -167,6 +167,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -535,7 +548,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turret_explode_0006_0: 5466352174241959148
+      turret_explode_0006_1: 3676022001578545698
+      turret_explode_0006_10: 2390638739829584673
+      turret_explode_0006_11: -3305145274471738385
+      turret_explode_0006_12: -8193262515917290235
+      turret_explode_0006_13: 690130976871232721
+      turret_explode_0006_14: -6468804945747921854
+      turret_explode_0006_15: -7066510648720808864
+      turret_explode_0006_2: -4741443595627019005
+      turret_explode_0006_3: 5574257584070700696
+      turret_explode_0006_4: -637388231267956492
+      turret_explode_0006_5: 6686365850767393384
+      turret_explode_0006_6: -452780218895063596
+      turret_explode_0006_7: 3755816165404917639
+      turret_explode_0006_8: -2894719442868669042
+      turret_explode_0006_9: 8865490970390654887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

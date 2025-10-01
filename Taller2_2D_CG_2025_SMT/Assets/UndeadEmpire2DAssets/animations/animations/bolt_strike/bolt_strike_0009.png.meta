@@ -140,6 +140,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -310,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bolt_strike_0009_0: -1229297672930851171
+      bolt_strike_0009_1: -2884542278206503757
+      bolt_strike_0009_2: 615960002875347958
+      bolt_strike_0009_3: 3654929125417491632
+      bolt_strike_0009_4: -1361265087495415738
+      bolt_strike_0009_5: 5777227506388561383
+      bolt_strike_0009_6: 6873527529092267678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

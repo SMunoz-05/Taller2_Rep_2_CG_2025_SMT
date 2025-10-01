@@ -173,6 +173,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -585,7 +598,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fireball_hit_0008_0: 8680218513941552091
+      fireball_hit_0008_1: 7007732989530778062
+      fireball_hit_0008_10: 1904339430960599736
+      fireball_hit_0008_11: -3401102207286913633
+      fireball_hit_0008_12: -4414903420968429447
+      fireball_hit_0008_13: 7361976921847695876
+      fireball_hit_0008_14: -4920331585937904591
+      fireball_hit_0008_15: -8121865568387417267
+      fireball_hit_0008_16: -6850047737495565685
+      fireball_hit_0008_17: 5291322323969300779
+      fireball_hit_0008_2: -4583682753581635291
+      fireball_hit_0008_3: 7234843604641391465
+      fireball_hit_0008_4: 5488907325139757527
+      fireball_hit_0008_5: 4541098709928740146
+      fireball_hit_0008_6: 202925193839302520
+      fireball_hit_0008_7: -7556972528359840616
+      fireball_hit_0008_8: 2441673227326627757
+      fireball_hit_0008_9: -8792059069092562350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

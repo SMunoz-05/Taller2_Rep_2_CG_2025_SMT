@@ -143,6 +143,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -335,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flamethrower_0013_0: -3774078393856040428
+      flamethrower_0013_1: -1185971963055198106
+      flamethrower_0013_2: 5428055631437568974
+      flamethrower_0013_3: -7211519405264180222
+      flamethrower_0013_4: 8423830491030288163
+      flamethrower_0013_5: 6468344142053615053
+      flamethrower_0013_6: -6280979331955927712
+      flamethrower_0013_7: -1074788944728261864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

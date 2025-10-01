@@ -143,6 +143,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -335,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lava_bubble_0011_0: 982252293373151850
+      lava_bubble_0011_1: 5136549045762150630
+      lava_bubble_0011_2: -5996178654826809203
+      lava_bubble_0011_3: -9190245169661437455
+      lava_bubble_0011_4: -8089880360687684010
+      lava_bubble_0011_5: -3044800899711597927
+      lava_bubble_0011_6: 7949611325746305488
+      lava_bubble_0011_7: -4883236203248924296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

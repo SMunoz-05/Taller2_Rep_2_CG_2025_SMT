@@ -179,6 +179,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -635,7 +648,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smoke_plume_0007_0: -2808401843508832876
+      smoke_plume_0007_1: 1660996113075434236
+      smoke_plume_0007_10: 5146014960361968205
+      smoke_plume_0007_11: 3892800810557727021
+      smoke_plume_0007_12: 5319203770334292062
+      smoke_plume_0007_13: -8191470461977491078
+      smoke_plume_0007_14: 7702344959112163235
+      smoke_plume_0007_15: 761181883656063616
+      smoke_plume_0007_16: -5971369693180514097
+      smoke_plume_0007_17: 2207912466440579654
+      smoke_plume_0007_18: -8917042258447631787
+      smoke_plume_0007_19: -4127721912236866434
+      smoke_plume_0007_2: 177575592089279416
+      smoke_plume_0007_3: 5314229040235298181
+      smoke_plume_0007_4: 5659439400995930246
+      smoke_plume_0007_5: 7923284357932300149
+      smoke_plume_0007_6: -8256375724324622461
+      smoke_plume_0007_7: -8473891624062621831
+      smoke_plume_0007_8: -6354561687147479061
+      smoke_plume_0007_9: -6183536828744528128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

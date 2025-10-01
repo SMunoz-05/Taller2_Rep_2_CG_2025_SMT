@@ -176,6 +176,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -610,7 +623,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_break_0041_0: -2382876020924016932
+      ice_break_0041_1: 8222746333874167695
+      ice_break_0041_10: -1760895179890294481
+      ice_break_0041_11: 8196024928375162523
+      ice_break_0041_12: -7710473803087426471
+      ice_break_0041_13: -4658551863275270174
+      ice_break_0041_14: 4774566595099215905
+      ice_break_0041_15: 367514172901002072
+      ice_break_0041_16: 8360139626629292588
+      ice_break_0041_17: 6945270562712535802
+      ice_break_0041_18: 8100810357171131324
+      ice_break_0041_2: -155092310701901751
+      ice_break_0041_3: -8219024742390295702
+      ice_break_0041_4: -1914556028817098451
+      ice_break_0041_5: -8930603411738492112
+      ice_break_0041_6: 1027451635123785133
+      ice_break_0041_7: 5809258396347665949
+      ice_break_0041_8: 2377959233578532927
+      ice_break_0041_9: -1126887145555376989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
