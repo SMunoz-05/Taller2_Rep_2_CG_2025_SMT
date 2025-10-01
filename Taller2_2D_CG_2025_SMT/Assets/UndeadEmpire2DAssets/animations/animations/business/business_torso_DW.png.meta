@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      business_torso_DW_0: -6593004686717815683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

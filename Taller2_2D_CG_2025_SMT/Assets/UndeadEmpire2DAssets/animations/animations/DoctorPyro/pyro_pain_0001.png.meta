@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pyro_pain_0001_0: -1931212835863729150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

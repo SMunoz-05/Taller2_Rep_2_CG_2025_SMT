@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lava_Curve_SE_0: 1802403711084391455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

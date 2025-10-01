@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rott_attack_0001_0: 6956826035637192682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

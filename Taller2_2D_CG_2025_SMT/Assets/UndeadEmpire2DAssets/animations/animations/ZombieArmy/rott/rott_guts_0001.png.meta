@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rott_guts_0001_0: 2026297939588935501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

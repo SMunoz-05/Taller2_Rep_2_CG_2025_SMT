@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fatso_spawn_0001_0: -2987842084648734814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

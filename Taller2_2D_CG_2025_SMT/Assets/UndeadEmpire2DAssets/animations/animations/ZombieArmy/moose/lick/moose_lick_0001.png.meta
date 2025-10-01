@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moose_lick_0001_0: -3007707658758061842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

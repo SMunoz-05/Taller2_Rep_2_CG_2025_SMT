@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vomit_attack_0001_0: 5195695406611677735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

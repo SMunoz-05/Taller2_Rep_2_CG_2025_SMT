@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moose_spawn_0002_0: -4279862523133477201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

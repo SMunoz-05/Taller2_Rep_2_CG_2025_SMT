@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      freeze_turret_still_0: -4197901409149096498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

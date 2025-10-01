@@ -510,7 +510,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_break_0038_0: -6560476290396351832
+      ice_break_0038_1: -3811638461004827468
+      ice_break_0038_10: 5815999207750496853
+      ice_break_0038_11: -2141739998352160660
+      ice_break_0038_12: -3743096615979198952
+      ice_break_0038_13: -6331151613031998331
+      ice_break_0038_14: -5290110501295239194
+      ice_break_0038_2: -2173866886914108787
+      ice_break_0038_3: -8384162142124556911
+      ice_break_0038_4: 1472728254642397455
+      ice_break_0038_5: 916201743399401599
+      ice_break_0038_6: -4689525257462957850
+      ice_break_0038_7: 1969171510058832672
+      ice_break_0038_8: -3209665518657923646
+      ice_break_0038_9: -7709373844850164787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

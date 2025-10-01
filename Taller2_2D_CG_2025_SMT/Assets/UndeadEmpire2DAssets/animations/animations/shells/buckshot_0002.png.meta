@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buckshot_0002_0: -8358843405365686629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

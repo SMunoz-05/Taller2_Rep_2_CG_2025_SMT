@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nurse_legs_0002_0: -736088823947186841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

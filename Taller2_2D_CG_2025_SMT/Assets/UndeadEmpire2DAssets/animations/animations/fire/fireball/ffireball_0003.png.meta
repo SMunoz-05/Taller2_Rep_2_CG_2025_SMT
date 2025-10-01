@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ffireball_0003_0: -99752471782602178
+      ffireball_0003_1: 6206670318676441225
+      ffireball_0003_2: -3308450985322984858
+      ffireball_0003_3: -7982580731709297383
+      ffireball_0003_4: -6006160553863453701
+      ffireball_0003_5: 3934361080007302067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

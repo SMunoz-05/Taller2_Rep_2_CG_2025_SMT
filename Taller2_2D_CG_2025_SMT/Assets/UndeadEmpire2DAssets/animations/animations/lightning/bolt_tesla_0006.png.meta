@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bolt_tesla_0006_0: -4750536577855621241
+      bolt_tesla_0006_1: 9054201841280148536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

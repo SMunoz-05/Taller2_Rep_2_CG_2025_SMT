@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      doctor_pain_0001_0: 820503969437218016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

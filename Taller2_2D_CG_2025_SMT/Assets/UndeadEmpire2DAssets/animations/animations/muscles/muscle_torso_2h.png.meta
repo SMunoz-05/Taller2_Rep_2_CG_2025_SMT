@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      muscle_torso_2h_0: -5566840722988400570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

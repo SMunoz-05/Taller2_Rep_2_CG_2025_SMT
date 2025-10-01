@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      business_legs_0002_0: 1530017369019994018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

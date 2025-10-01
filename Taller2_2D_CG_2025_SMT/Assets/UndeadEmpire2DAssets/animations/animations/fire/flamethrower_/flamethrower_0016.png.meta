@@ -710,7 +710,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flamethrower_0016_0: 157402168302110872
+      flamethrower_0016_1: -5478348698897013366
+      flamethrower_0016_10: 4835301119229666554
+      flamethrower_0016_11: -2076707966352744918
+      flamethrower_0016_12: -6408968796288134144
+      flamethrower_0016_13: -16951868121371273
+      flamethrower_0016_14: -2874226963650067359
+      flamethrower_0016_15: 5299505763716317519
+      flamethrower_0016_16: 503819883458944724
+      flamethrower_0016_17: -388296114783602664
+      flamethrower_0016_18: 3185409246408290021
+      flamethrower_0016_19: 7134688953293714790
+      flamethrower_0016_2: 6466622620155572878
+      flamethrower_0016_20: -6888291126107044247
+      flamethrower_0016_21: 2437275824604285926
+      flamethrower_0016_22: 875802289643586012
+      flamethrower_0016_3: 1055844342402785014
+      flamethrower_0016_4: 297598004893017647
+      flamethrower_0016_5: 5717874611183799464
+      flamethrower_0016_6: 2876083996634287167
+      flamethrower_0016_7: 5778857674320374256
+      flamethrower_0016_8: 2758279571365524377
+      flamethrower_0016_9: -1909300795567669600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

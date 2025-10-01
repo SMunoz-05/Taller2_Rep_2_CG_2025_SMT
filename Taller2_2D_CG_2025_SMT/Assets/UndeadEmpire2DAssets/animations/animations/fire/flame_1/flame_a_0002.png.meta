@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flame_a_0002_0: 4937158354638812608
+      flame_a_0002_1: 3834136202026188165
+      flame_a_0002_2: 6697427660564008511
+      flame_a_0002_3: -702631114487383637
+      flame_a_0002_4: -8896606864858609698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

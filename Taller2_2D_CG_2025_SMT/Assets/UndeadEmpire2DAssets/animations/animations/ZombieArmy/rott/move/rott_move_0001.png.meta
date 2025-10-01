@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rott_move_0001_0: 3451244088902856493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

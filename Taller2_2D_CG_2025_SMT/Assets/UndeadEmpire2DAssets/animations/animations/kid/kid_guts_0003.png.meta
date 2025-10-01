@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kid_guts_0003_0: -3261874917242310632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

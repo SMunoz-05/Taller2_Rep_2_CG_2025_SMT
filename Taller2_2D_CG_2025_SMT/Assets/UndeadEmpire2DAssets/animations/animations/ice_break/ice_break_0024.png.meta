@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_break_0024_0: -2198613571954997117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      doctor_move_0004_0: -9086460671162641557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

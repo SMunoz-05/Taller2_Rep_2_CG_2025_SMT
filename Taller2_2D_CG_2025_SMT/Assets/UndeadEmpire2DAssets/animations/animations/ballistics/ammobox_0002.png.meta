@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ammobox_0002_0: 4744869473803320610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

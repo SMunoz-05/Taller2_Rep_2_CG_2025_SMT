@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fatso_guts_0001_0: -810901342090770567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pyro_move_0003_0: -3824022757005234591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

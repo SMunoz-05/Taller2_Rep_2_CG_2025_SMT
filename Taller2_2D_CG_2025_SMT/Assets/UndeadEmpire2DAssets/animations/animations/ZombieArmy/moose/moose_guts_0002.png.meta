@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moose_guts_0002_0: 5820952888606424744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

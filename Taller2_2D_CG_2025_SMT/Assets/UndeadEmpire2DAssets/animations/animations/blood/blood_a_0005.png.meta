@@ -510,7 +510,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blood_a_0005_0: 2524072162122706077
+      blood_a_0005_1: -6267298908127922226
+      blood_a_0005_10: -4561146527558424374
+      blood_a_0005_11: -266451776050845387
+      blood_a_0005_12: 4945888557964088059
+      blood_a_0005_13: 4640236332571767309
+      blood_a_0005_14: -1952794473279711829
+      blood_a_0005_2: 2309379601430647912
+      blood_a_0005_3: -7619102272507424719
+      blood_a_0005_4: 8218712465764016812
+      blood_a_0005_5: 1467511602248364096
+      blood_a_0005_6: 8604263959503824448
+      blood_a_0005_7: 3341384889475733206
+      blood_a_0005_8: -8720052526660169678
+      blood_a_0005_9: 5917866074939565278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

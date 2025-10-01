@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rott_spawn_0002_0: 1366517296154591158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

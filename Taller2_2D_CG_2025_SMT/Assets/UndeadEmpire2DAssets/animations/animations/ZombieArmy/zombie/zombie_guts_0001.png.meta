@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      zombie_guts_0001_0: -4727514975266242482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

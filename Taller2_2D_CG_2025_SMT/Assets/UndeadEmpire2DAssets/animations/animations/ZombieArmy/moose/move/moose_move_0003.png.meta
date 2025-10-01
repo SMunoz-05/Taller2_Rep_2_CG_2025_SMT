@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moose_move_0003_0: 3005277090203320280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

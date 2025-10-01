@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      witch_guts_0003_0: -837382648990793815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

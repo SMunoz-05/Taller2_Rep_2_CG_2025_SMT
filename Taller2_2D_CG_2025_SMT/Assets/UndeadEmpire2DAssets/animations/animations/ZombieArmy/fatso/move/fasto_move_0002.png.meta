@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fasto_move_0002_0: -2596290748582858679
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

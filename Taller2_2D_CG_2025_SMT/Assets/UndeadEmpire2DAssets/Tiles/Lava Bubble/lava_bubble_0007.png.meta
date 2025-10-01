@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lava_bubble_0007_0: 6860283807618212749
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

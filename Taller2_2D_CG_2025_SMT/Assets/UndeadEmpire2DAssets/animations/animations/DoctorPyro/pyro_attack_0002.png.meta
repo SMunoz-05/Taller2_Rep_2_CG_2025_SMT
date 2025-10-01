@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pyro_attack_0002_0: 1837115350331628632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -610,7 +610,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fireball_hit_0006_0: -7274828581449072149
+      fireball_hit_0006_1: -8900376424457274713
+      fireball_hit_0006_10: -1073030248766719514
+      fireball_hit_0006_11: 7977932658587041845
+      fireball_hit_0006_12: 4754426064592770932
+      fireball_hit_0006_13: -480462420920695122
+      fireball_hit_0006_14: -6722913883506887266
+      fireball_hit_0006_15: -6728535995245959709
+      fireball_hit_0006_16: -8942716161540905585
+      fireball_hit_0006_17: -8805664901286157273
+      fireball_hit_0006_18: -7074780714829589391
+      fireball_hit_0006_2: 6177905213058685605
+      fireball_hit_0006_3: -1027019188433921764
+      fireball_hit_0006_4: 5132726440276903023
+      fireball_hit_0006_5: -4988713189822124163
+      fireball_hit_0006_6: -2483710487808252711
+      fireball_hit_0006_7: 7590804370246021272
+      fireball_hit_0006_8: -1332297252314180909
+      fireball_hit_0006_9: -8028684915878982524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

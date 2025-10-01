@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pyro_guts_0001_0: 7819328909891674787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

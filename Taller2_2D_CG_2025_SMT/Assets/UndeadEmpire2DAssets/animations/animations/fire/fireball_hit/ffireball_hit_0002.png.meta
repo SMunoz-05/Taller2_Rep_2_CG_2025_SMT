@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ffireball_hit_0002_0: -3577265009251638925
+      ffireball_hit_0002_1: -4121149835418685715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

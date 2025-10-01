@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      soldier_torso_1h_0: 9089159517392218004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vomit_move_0003_0: -2210036779129639978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

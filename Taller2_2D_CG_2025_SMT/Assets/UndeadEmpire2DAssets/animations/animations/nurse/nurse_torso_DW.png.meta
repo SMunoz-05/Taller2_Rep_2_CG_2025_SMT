@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nurse_torso_DW_0: 8011658104289850439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

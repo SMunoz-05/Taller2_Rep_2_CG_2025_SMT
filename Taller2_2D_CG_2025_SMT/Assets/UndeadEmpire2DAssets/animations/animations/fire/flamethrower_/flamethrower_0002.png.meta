@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flamethrower_0002_0: 5353959209224329804
+      flamethrower_0002_1: 2192325126359543976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

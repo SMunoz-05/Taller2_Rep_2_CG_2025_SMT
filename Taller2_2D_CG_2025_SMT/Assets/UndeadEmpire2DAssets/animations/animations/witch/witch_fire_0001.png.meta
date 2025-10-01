@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      witch_fire_0001_0: -5250370566130634292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

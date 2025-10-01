@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turret_explode_0005_0: 2047618592812762406
+      turret_explode_0005_1: -2180645899705769087
+      turret_explode_0005_10: -1906064297013513174
+      turret_explode_0005_11: 7168577112496524270
+      turret_explode_0005_2: -272061397905370263
+      turret_explode_0005_3: 6452847898911689765
+      turret_explode_0005_4: -4868683329390227172
+      turret_explode_0005_5: 5956493951017784503
+      turret_explode_0005_6: 1247520218449774849
+      turret_explode_0005_7: 6955395201877601212
+      turret_explode_0005_8: 8209930775057962381
+      turret_explode_0005_9: 8841174743445315451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
