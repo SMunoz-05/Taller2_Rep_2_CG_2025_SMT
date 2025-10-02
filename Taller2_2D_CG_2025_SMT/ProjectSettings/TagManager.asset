@@ -9,6 +9,7 @@ TagManager:
   - Damage
   - Coin
   - Esmeralda
+  - Rubi
   layers:
   - Default
   - TransparentFX

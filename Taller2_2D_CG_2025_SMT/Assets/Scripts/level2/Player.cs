@@ -28,15 +28,17 @@ public class Player : MonoBehaviour
     [Header("Collectibles")]
     public int coins;
     public int esmeralda;
+    public int rubi;
     public TMP_Text TextCoins;
     public TMP_Text TextEsmeraldas;
+    public TMP_Text TextRubis;
     public TMP_Text TextScore;
 
     [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip coinClip;
-    public AudioClip barrelClip;
     public AudioClip esmeraldaClip;
+    public AudioClip rubiClip;
     public AudioClip damageClip; // Añade un clip de daño
 
     [Header("Damage Settings")]
@@ -53,6 +55,7 @@ public class Player : MonoBehaviour
     // Public properties
     public int Coins => coins;
     public int Esmeraldas => esmeralda;
+    public int Rubis => rubi;
     public int CurrentHealth => currentHealth;
 
     void Start()
@@ -236,29 +239,22 @@ public class Player : MonoBehaviour
             GameManager.Instance.AddScore(200);
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
+        if (collision.transform.CompareTag("Rubi"))
+        {
+            audioSource.PlayOneShot(rubiClip);
+            Destroy(collision.gameObject);
+            rubi++;
+            TextRubis.text = rubi.ToString();
+            GameManager.Instance.AddScore(500);
+            TextScore.text = GameManager.Instance.GetScore().ToString();
+        }
 
-        if (collision.transform.CompareTag("Spikes"))
+        if (collision.transform.CompareTag("Damage"))
         {
             PlayerDamaged();
         }
 
-        if (collision.transform.CompareTag("Barrel"))
-        {
-            audioSource.PlayOneShot(barrelClip);
-            Vector2 knockbackDir = (rb2D.position - (Vector2)collision.transform.position).normalized;
-            rb2D.linearVelocity = Vector2.zero;
-            rb2D.AddForce(knockbackDir * 3, ForceMode2D.Impulse);
 
-            BoxCollider2D[] collaiders = collision.gameObject.GetComponents<BoxCollider2D>();
-
-            foreach (BoxCollider2D col in collaiders)
-            {
-                col.enabled = false;
-            }
-
-            collision.GetComponent<Animator>().enabled = true;
-            Destroy(collision.gameObject, 0.5f);
-        }
     }
 
     // Para debugging
