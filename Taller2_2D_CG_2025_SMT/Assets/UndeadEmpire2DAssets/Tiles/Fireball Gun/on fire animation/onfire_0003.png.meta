@@ -164,6 +164,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -510,7 +523,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      onfire_0003_0: -4402526676352751318
+      onfire_0003_1: 2922631732761292874
+      onfire_0003_10: -4449704612033442916
+      onfire_0003_11: 7473130918854810149
+      onfire_0003_12: 929872503755357973
+      onfire_0003_13: 60703925311734333
+      onfire_0003_14: -2783308537382426967
+      onfire_0003_2: 4050115006326721073
+      onfire_0003_3: 5306480395744852848
+      onfire_0003_4: -3183908694377901437
+      onfire_0003_5: -8725428479910595537
+      onfire_0003_6: -4668333041438553277
+      onfire_0003_7: 3516852614943631207
+      onfire_0003_8: 5571726224266640959
+      onfire_0003_9: -3261282523840775860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

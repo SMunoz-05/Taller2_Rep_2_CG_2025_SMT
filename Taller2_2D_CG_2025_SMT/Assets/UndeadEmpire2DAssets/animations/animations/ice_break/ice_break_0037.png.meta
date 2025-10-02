@@ -149,6 +149,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -385,7 +398,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_break_0037_0: -5508927862854724762
+      ice_break_0037_1: -6145237580177367680
+      ice_break_0037_2: -5479454415913591819
+      ice_break_0037_3: 2933139140997527360
+      ice_break_0037_4: 5593829679302682164
+      ice_break_0037_5: -418634295821487001
+      ice_break_0037_6: -1326362183202671673
+      ice_break_0037_7: 2856665519900332692
+      ice_break_0037_8: 3303780043276129052
+      ice_break_0037_9: 3279899303138377727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
