@@ -75992,9 +75992,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1973714306173695504, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376354494525010634, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018727346315343505, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018727346315343505, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196597390696838627, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200.233
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196597390696838627, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 65.04295
       objectReference: {fileID: 0}
     - target: {fileID: 8882751442675392055, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
       propertyPath: m_Pivot.x

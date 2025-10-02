@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
     {
         if (TextHealth != null)
         {
-            TextHealth.text = $"Health: {currentHealth}/{maxHealth}";
+            TextHealth.text = $"{currentHealth}/{maxHealth}";
         }
     }
 
