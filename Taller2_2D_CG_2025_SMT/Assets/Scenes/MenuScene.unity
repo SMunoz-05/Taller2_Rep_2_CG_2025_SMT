@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1872971111}
+  scorePerEnemy: 50
   totalTime: 120
   timerMinutes: {fileID: 1138187776}
   timerSeconds: {fileID: 654776560}
@@ -1002,7 +1003,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3376354494525010634, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
