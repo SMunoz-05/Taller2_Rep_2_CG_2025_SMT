@@ -26,9 +26,6 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     [Header("Collectibles")]
-    public int coins;
-    public int esmeralda;
-    public int rubi;
     public TMP_Text TextCoins;
     public TMP_Text TextEsmeraldas;
     public TMP_Text TextRubis;
@@ -53,9 +50,6 @@ public class Player : MonoBehaviour
     private bool canAttack = true;
 
     // Public properties
-    public int Coins => coins;
-    public int Esmeraldas => esmeralda;
-    public int Rubis => rubi;
     public int CurrentHealth => currentHealth;
 
     void Start()
@@ -66,6 +60,12 @@ public class Player : MonoBehaviour
         // Initialize health
         currentHealth = maxHealth;
         UpdateHealthUI();
+
+        TextCoins.text = GameManager.Instance.coins.ToString();
+        TextEsmeraldas.text = GameManager.Instance.esmeraldas.ToString();
+        TextRubis.text = GameManager.Instance.rubis.ToString();
+        TextScore.text = GameManager.Instance.GetScore().ToString();
+
     }
 
     void Update()
@@ -230,8 +230,9 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(coinClip);
             Destroy(collision.gameObject);
-            coins++;
-            TextCoins.text = coins.ToString();
+            GameManager.Instance.coins++;
+            TextCoins.text = GameManager.Instance.coins.ToString();
+
             GameManager.Instance.AddScore(100);
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
@@ -240,8 +241,8 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(esmeraldaClip);
             Destroy(collision.gameObject);
-            esmeralda++;
-            TextEsmeraldas.text = esmeralda.ToString();
+            GameManager.Instance.esmeraldas++;
+            TextEsmeraldas.text = GameManager.Instance.esmeraldas.ToString();
             GameManager.Instance.AddScore(200);
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
@@ -249,8 +250,8 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(rubiClip);
             Destroy(collision.gameObject);
-            rubi++;
-            TextRubis.text = rubi.ToString();
+            GameManager.Instance.rubis++;
+            TextRubis.text = GameManager.Instance.rubis.ToString();
             GameManager.Instance.AddScore(500);
             TextScore.text = GameManager.Instance.GetScore().ToString();
         }
