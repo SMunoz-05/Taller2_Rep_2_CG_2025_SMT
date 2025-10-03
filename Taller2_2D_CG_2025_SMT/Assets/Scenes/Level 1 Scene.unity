@@ -5783,7 +5783,7 @@ PrefabInstance:
     - target: {fileID: 2330144248860013255, guid: f9ca403e3d36b404ca531651ce10af40, type: 3}
       propertyPath: rubiClip
       value: 
-      objectReference: {fileID: 8300000, guid: 508cd467485716c4ab2d8d1bc50e96f2, type: 3}
+      objectReference: {fileID: 8300000, guid: b26e97c127e6f2648af1065266222e47, type: 3}
     - target: {fileID: 2330144248860013255, guid: f9ca403e3d36b404ca531651ce10af40, type: 3}
       propertyPath: TextCoins
       value: 

@@ -75787,8 +75787,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 58bd5740b45dce74fa92accce2ad7df1, type: 3}
-  m_Resource: {fileID: 8300000, guid: 58bd5740b45dce74fa92accce2ad7df1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 20262aa29310d43409ce1aed16bf4d21, type: 3}
+  m_Resource: {fileID: 8300000, guid: 20262aa29310d43409ce1aed16bf4d21, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.703
   m_Pitch: 1
@@ -76454,7 +76454,7 @@ PrefabInstance:
     - target: {fileID: 2330144248860013255, guid: f9ca403e3d36b404ca531651ce10af40, type: 3}
       propertyPath: rubiClip
       value: 
-      objectReference: {fileID: 8300000, guid: 508cd467485716c4ab2d8d1bc50e96f2, type: 3}
+      objectReference: {fileID: 8300000, guid: b26e97c127e6f2648af1065266222e47, type: 3}
     - target: {fileID: 2330144248860013255, guid: f9ca403e3d36b404ca531651ce10af40, type: 3}
       propertyPath: TextCoins
       value: 
