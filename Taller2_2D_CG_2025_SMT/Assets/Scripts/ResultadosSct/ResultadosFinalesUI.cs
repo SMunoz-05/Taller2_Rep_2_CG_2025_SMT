@@ -10,6 +10,10 @@ public class FinalResultados : MonoBehaviour
     public TMP_Text tiempoTotalText;
     public TMP_Text scoreTotalText;
     public Button saveButton;
+    public TMP_Text monedasText;
+    public TMP_Text esmeraldasText;
+    public TMP_Text rubisText;
+    public TMP_Text vidasText; // <-- Nuevo
 
     private void Start()
     {
@@ -35,6 +39,18 @@ public class FinalResultados : MonoBehaviour
         int centesimas = Mathf.FloorToInt((tiempoTotal - (minutos * 60 + segundos)) * 100);
         tiempoTotalText.text = string.Format("Tiempo: {0:00}:{1:00}:{2:00}", minutos, segundos, centesimas);
 
+        // Mostrar coleccionables
+        monedasText.text = "" + GameManager.Instance.coins;
+        esmeraldasText.text = "" + GameManager.Instance.esmeraldas;
+        rubisText.text = "" + GameManager.Instance.rubis;
+
+        // Mostrar vidas
+        Player player = FindObjectOfType<Player>();
+        if (player != null)
+        {
+            vidasText.text = $"{player.CurrentHealth}/{player.maxHealth}";
+        }
+
         // Pausar el juego
         Time.timeScale = 0f;
     }
@@ -50,6 +66,17 @@ public class FinalResultados : MonoBehaviour
         int segundos = Mathf.FloorToInt(totalTime % 60);
         int centesimas = Mathf.FloorToInt((totalTime - (minutos * 60 + segundos)) * 100);
         data.TiempoTotal = string.Format("{0:00}:{1:00}:{2:00}", minutos, segundos, centesimas);
+
+
+        data.Monedas = GameManager.Instance.coins;
+        data.Esmeraldas = GameManager.Instance.esmeraldas;
+        data.Rubis = GameManager.Instance.rubis;
+        Player player = FindObjectOfType<Player>();
+        if (player != null)
+        {
+            data.Vidas = player.CurrentHealth;
+        }
+
 
         string json = JsonUtility.ToJson(data, true);
 
@@ -72,4 +99,8 @@ public class ResultData
     public string descripcion = "Resultados de los niveles";
     public int ScoreTotal;
     public string TiempoTotal;
+    public int Monedas;
+    public int Esmeraldas;
+    public int Rubis;
+    public int Vidas;
 }

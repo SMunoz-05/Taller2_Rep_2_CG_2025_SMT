@@ -1,5 +1,9 @@
 {
     "descripcion": "Resultados de los niveles",
-    "ScoreTotal": 8900,
-    "TiempoTotal": "00:42:97"
+    "ScoreTotal": 9200,
+    "TiempoTotal": "00:40:96",
+    "Monedas": 20,
+    "Esmeraldas": 11,
+    "Rubis": 10,
+    "Vidas": 3
 }
