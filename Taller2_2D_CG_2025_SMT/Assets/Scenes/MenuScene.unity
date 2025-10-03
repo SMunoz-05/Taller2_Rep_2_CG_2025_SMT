@@ -285,7 +285,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1872971111}
   scorePerEnemy: 50
-  totalTime: 120
   timerMinutes: {fileID: 1138187776}
   timerSeconds: {fileID: 654776560}
   timerSeconds100: {fileID: 637830562}
@@ -972,6 +971,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8370786708286099228, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8575087202185578548, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
