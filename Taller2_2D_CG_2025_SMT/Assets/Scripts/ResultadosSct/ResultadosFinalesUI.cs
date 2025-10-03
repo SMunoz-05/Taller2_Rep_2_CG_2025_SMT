@@ -24,7 +24,7 @@ public class FinalResultados : MonoBehaviour
 
         // Obtener datos desde el GameManager
         int score = GameManager.Instance.GetScore();
-        float tiempoTotal = GameManager.Instance.TotalTimeUsed;
+        float tiempoTotal = GameManager.Instance.GlobalTime;
 
         // Mostrar score
         scoreTotalText.text = "Puntaje: " + score.ToString("D6");
@@ -39,12 +39,12 @@ public class FinalResultados : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    private void SaveResultsToJSON()
+    public void SaveResultsToJSON()
     {
         ResultData data = new ResultData();
 
         data.ScoreTotal = GameManager.Instance.GetScore();
-        float totalTime = GameManager.Instance.TotalTimeUsed;
+        float totalTime = GameManager.Instance.GlobalTime;
 
         int minutos = Mathf.FloorToInt(totalTime / 60);
         int segundos = Mathf.FloorToInt(totalTime % 60);

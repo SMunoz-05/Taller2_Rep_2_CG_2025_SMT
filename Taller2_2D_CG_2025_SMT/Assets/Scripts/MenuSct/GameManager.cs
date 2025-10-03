@@ -9,22 +9,20 @@ public class GameManager : MonoBehaviour
     [Header("Score System")]
     private int score = 0;
     public TMP_Text scoreText;
-    public int scorePerEnemy = 50; // Puntos por eliminar enemigo
+    public int scorePerEnemy = 50;
 
     [Header("Enemy Tracking")]
     private int enemiesKilled = 0;
 
-    [Header("Timer Settings")]
-    public float totalTime = 120f; 
-    private float timerTime;
+    [Header("Global Timer")]
+    private float globalTimer = 0f;  // ⏳ Timer global que no se reinicia
     private bool isRunning = false;
-    private float totalTimeUsed = 0f;
 
     public TMP_Text timerMinutes;
     public TMP_Text timerSeconds;
     public TMP_Text timerSeconds100;
 
-    public float TotalTimeUsed => totalTimeUsed;
+    public float GlobalTime => globalTimer;
     public int EnemiesKilled => enemiesKilled;
 
     private void Awake()
@@ -40,8 +38,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        ResetTimer();
-        MostrarTiempo(timerTime);
         StartTimer();
         if (scoreText != null)
             scoreText.text = score.ToString();
@@ -51,28 +47,9 @@ public class GameManager : MonoBehaviour
     {
         if (isRunning)
         {
-            timerTime -= Time.deltaTime;
-            if (timerTime <= 0f)
-            {
-                float timeUsedThisLevel = totalTime;
-                totalTimeUsed += timeUsedThisLevel;
-                timerTime = 0f;
-                isRunning = false;
-                MostrarTiempo(timerTime);
-                Debug.Log("Se terminó el tiempo en nivel: " + SceneManager.GetActiveScene().name);
-            }
-            else
-            {
-                MostrarTiempo(timerTime);
-            }
+            globalTimer += Time.deltaTime;  // ⏳ Aumenta el tiempo global
+            MostrarTiempo(globalTimer);
         }
-    }
-
-    public void ResetTimer()
-    {
-        timerTime = totalTime;
-        MostrarTiempo(timerTime);
-        isRunning = false;
     }
 
     public void StartTimer()
@@ -80,19 +57,20 @@ public class GameManager : MonoBehaviour
         isRunning = true;
     }
 
+    public void StopTimer()
+    {
+        isRunning = false;
+    }
+
     public void CargarSiguienteNivelPorNombre()
     {
-        float timeUsedThisLevel = totalTime - timerTime;
-        totalTimeUsed += timeUsedThisLevel;
-
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
         int nextIndex = currentIndex + 1;
 
         if (nextIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextIndex);
-            ResetTimer();
-            StartTimer();
+            // 👇 No se reinicia nada, solo seguimos corriendo
         }
         else
         {
@@ -118,14 +96,13 @@ public class GameManager : MonoBehaviour
             scoreText.text = score.ToString();
     }
 
-    // NUEVO MÉTODO: Para cuando el Enemy muere
     public void OnEnemyKilled(Enemy enemy)
     {
         if (enemy == null) return;
 
         enemiesKilled++;
         AddScore(scorePerEnemy);
-        
+
         Debug.Log($"Enemigo eliminado! Total: {enemiesKilled}, Score: {score}");
     }
 
@@ -144,16 +121,11 @@ public class GameManager : MonoBehaviour
 
     public void MostrarTotalesFinales()
     {
-        int minutes = Mathf.FloorToInt(totalTimeUsed / 60);
-        int seconds = Mathf.FloorToInt(totalTimeUsed % 60);
+        int minutes = Mathf.FloorToInt(globalTimer / 60);
+        int seconds = Mathf.FloorToInt(globalTimer % 60);
         Debug.Log("El tiempo total fue de : " + minutes + " minutos " + seconds + " segundos");
         Debug.Log("El puntaje total fue de : " + score + " puntos");
         Debug.Log("Enemigos eliminados: " + enemiesKilled);
-    }
-
-    public void RegistrarTiempoUsadoNivelActual()
-    {
-        totalTimeUsed += totalTime - timerTime;
     }
 
     public void SetTimerUI(TMP_Text min, TMP_Text sec, TMP_Text sec100)
@@ -161,7 +133,7 @@ public class GameManager : MonoBehaviour
         timerMinutes = min;
         timerSeconds = sec;
         timerSeconds100 = sec100;
-        MostrarTiempo(timerTime);
+        MostrarTiempo(globalTimer);  // 👈 Actualiza con el tiempo acumulado
     }
 
     public void SetScoreUI(TMP_Text scoreTextUI)
