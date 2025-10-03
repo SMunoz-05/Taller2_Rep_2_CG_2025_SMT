@@ -10,8 +10,12 @@ public class GameUISetup : MonoBehaviour
 
     void Start()
     {
-        // Una sola vez por escena, actualiza referencia del GameManager a UI local
-        GameManager.Instance.SetTimerUI(minutos, segundos, milisegundos);
-        GameManager.Instance.SetScoreUI(scoreText);
+        if (GameManager.Instance != null)
+        {
+            // Una sola vez por escena, actualiza referencia del GameManager a UI local
+            GameManager.Instance.SetTimerUI(minutos, segundos, milisegundos);
+            GameManager.Instance.SetScoreUI(scoreText);
+        }
     }
 }
+            

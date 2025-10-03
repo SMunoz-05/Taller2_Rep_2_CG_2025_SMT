@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 32731727}
   - component: {fileID: 32731725}
-  - component: {fileID: 32731728}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -149,10 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3301d18d9ca61a44686660ae5f25127e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutos: {fileID: 0}
-  segundos: {fileID: 0}
-  milisegundos: {fileID: 0}
-  scoreText: {fileID: 0}
+  minutos: {fileID: 1718162226}
+  segundos: {fileID: 1718162225}
+  milisegundos: {fileID: 1718162224}
+  scoreText: {fileID: 1549252384}
 --- !u!4 &32731727
 Transform:
   m_ObjectHideFlags: 0
@@ -168,24 +167,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &32731728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32731724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64f3a9a60e5ca8343b814f76368b8475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  scorePerEnemy: 50
-  totalTime: 120
-  timerMinutes: {fileID: 0}
-  timerSeconds: {fileID: 0}
-  timerSeconds100: {fileID: 0}
 --- !u!1001 &39501524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5806,6 +5787,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2616800598492706406, guid: c2976be85b7c27d438ed9126b460374f, type: 3}
   m_PrefabInstance: {fileID: 1678858556}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1718162224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2478464997181131554, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+  m_PrefabInstance: {fileID: 1549252383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1718162225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416556880131620845, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+  m_PrefabInstance: {fileID: 1549252383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1718162226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3034328563215027173, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+  m_PrefabInstance: {fileID: 1549252383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1730221162
 PrefabInstance:
   m_ObjectHideFlags: 0
