@@ -5275,6 +5275,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 391.61
       objectReference: {fileID: 0}
+    - target: {fileID: 4202003555476907299, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.7020264
+      objectReference: {fileID: 0}
     - target: {fileID: 4428006009528200404, guid: 8d98f56c49695f14d9fc6b0a529f563f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

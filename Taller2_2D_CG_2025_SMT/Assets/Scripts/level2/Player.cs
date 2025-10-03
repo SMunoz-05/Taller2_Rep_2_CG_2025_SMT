@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("VerticalVelocity", rb2D.linearVelocity.y);
         animator.SetBool("IsGrounded", isGrounded);
         
-        if (Input.GetKeyDown(KeyCode.Z) && canAttack)
+        if (Input.GetKeyDown(KeyCode.S) && canAttack)
         {
             Attack();
         }
