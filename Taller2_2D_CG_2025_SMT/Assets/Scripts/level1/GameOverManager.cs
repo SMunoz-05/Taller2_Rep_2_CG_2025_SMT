@@ -8,7 +8,7 @@ public class GameOverManager : MonoBehaviour
     private void Start()
     {
         if (gameOverPanel != null)
-            gameOverPanel.SetActive(false); 
+            gameOverPanel.SetActive(false); // Panel oculto al inicio
     }
 
     public void ShowGameOver()
@@ -17,16 +17,16 @@ public class GameOverManager : MonoBehaviour
             gameOverPanel.SetActive(true);
     }
 
-    
+    // 🔹 Reiniciar = cargar la primera escena (ej: nivel 1)
     public void RestartGame()
     {
-        SceneManager.LoadScene("Level 1 Scene"); 
+        SceneManager.LoadScene("Level 1 Scene"); // Cambia "Scene1" por el nombre exacto de tu primera escena
     }
 
-   
+    // 🔹 Ir al menú principal
     public void GoToMenu()
     {
-        SceneManager.LoadScene("MenuScene"); 
+        SceneManager.LoadScene("MenuScene"); // Cambia "Menu" por el nombre de tu escena del menú
     }
 }
 

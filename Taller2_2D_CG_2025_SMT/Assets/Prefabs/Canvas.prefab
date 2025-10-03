@@ -1004,7 +1004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3927187194308074851
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1625,6 +1625,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
 --- !u!1 &4710588147543085272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1701,8 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+=======
+>>>>>>> parent of c72ec54 (JSON Y Panel de resultados)
 --- !u!1 &4900523408268990960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,6 +2669,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
 --- !u!1 &6830465937579081237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,6 +2820,8 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+=======
+>>>>>>> parent of c72ec54 (JSON Y Panel de resultados)
 --- !u!1 &7528280569924080665
 GameObject:
   m_ObjectHideFlags: 0
