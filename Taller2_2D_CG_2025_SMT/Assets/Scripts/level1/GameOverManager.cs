@@ -1,31 +1,33 @@
-using UnityEngine;
+ï»¿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    [Header("UI Panels")]
-    public GameObject gameOverPanel; // arrastra el Panel GameOver aquí en el inspector
+    public GameObject gameOverPanel;
 
-    // Mostrar Game Over
+    private void Start()
+    {
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false); // Panel oculto al inicio
+    }
+
     public void ShowGameOver()
     {
         if (gameOverPanel != null)
-        {
             gameOverPanel.SetActive(true);
-            Time.timeScale = 0f; // Pausar el juego
-        }
     }
 
-    // Reiniciar juego (ejemplo de botón)
-    public void RestartGame(string sceneName)
+    // ðŸ”¹ Reiniciar = cargar la primera escena (ej: nivel 1)
+    public void RestartGame()
     {
-        Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Level 1 Scene"); // Cambia "Scene1" por el nombre exacto de tu primera escena
     }
 
-    // Salir del juego (ejemplo de botón)
-    public void QuitGame()
+    // ðŸ”¹ Ir al menÃº principal
+    public void GoToMenu()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MenuScene"); // Cambia "Menu" por el nombre de tu escena del menÃº
     }
 }
+
 

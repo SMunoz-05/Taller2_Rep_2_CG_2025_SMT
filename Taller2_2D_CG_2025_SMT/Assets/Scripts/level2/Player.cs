@@ -200,9 +200,15 @@ public class Player : MonoBehaviour
     {
         // Disable player controls
         enabled = false;
-        
-        StartCoroutine(WaitAndRespawn());
+
+        // Mostrar el Game Over
+        GameOverManager gameOver = FindObjectOfType<GameOverManager>();
+        if (gameOver != null)
+        {
+            gameOver.ShowGameOver();
+        }
     }
+
 
     public void PlayerDamaged()
     {
