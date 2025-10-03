@@ -15,8 +15,13 @@ public class GameManager : MonoBehaviour
     private int enemiesKilled = 0;
 
     [Header("Global Timer")]
-    private float globalTimer = 0f;  // ⏳ Timer global que no se reinicia
+    private float globalTimer = 0f;  //Timer global que no se reinicia
     private bool isRunning = false;
+
+    [Header("Collectibles")]
+    public int coins = 0;
+    public int esmeraldas = 0;
+    public int rubis = 0;
 
     public TMP_Text timerMinutes;
     public TMP_Text timerSeconds;
@@ -47,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         if (isRunning)
         {
-            globalTimer += Time.deltaTime;  // ⏳ Aumenta el tiempo global
+            globalTimer += Time.deltaTime;  //Aumenta el tiempo global
             MostrarTiempo(globalTimer);
         }
     }
@@ -70,7 +75,7 @@ public class GameManager : MonoBehaviour
         if (nextIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextIndex);
-            // 👇 No se reinicia nada, solo seguimos corriendo
+            // No se reinicia nada, solo seguimos corriendo
         }
         else
         {
@@ -133,7 +138,7 @@ public class GameManager : MonoBehaviour
         timerMinutes = min;
         timerSeconds = sec;
         timerSeconds100 = sec100;
-        MostrarTiempo(globalTimer);  // 👈 Actualiza con el tiempo acumulado
+        MostrarTiempo(globalTimer);  //Actualiza con el tiempo acumulado
     }
 
     public void SetScoreUI(TMP_Text scoreTextUI)
