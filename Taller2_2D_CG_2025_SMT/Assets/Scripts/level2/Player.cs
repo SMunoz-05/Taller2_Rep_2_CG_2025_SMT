@@ -91,28 +91,35 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Attack()
+private void Attack()
+{
+    canAttack = false;
+
+    // Trigger attack animation
+    animator.SetTrigger("Attack");
+
+    // Detect enemies in range
+    Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+
+    foreach (Collider2D enemy in enemiesInRange)
     {
-        canAttack = false;
-    
-        // Animación de ataque
-        animator.SetTrigger("Attack");
-    
-        // Detectar enemigos en rango
-        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
-    
-        foreach (Collider2D enemy in enemiesInRange)
+        Enemy enemyScript = enemy.GetComponent<Enemy>();
+        if (enemyScript != null && !enemyScript.IsDead)
         {
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
-            if (enemyScript != null && !enemyScript.IsDead)
-            {
-                enemyScript.TakeDamage(attackDamage);
-            }
+            enemyScript.TakeDamage(attackDamage);
         }
-    
-        StartCoroutine(AttackCooldownCoroutine());
     }
 
+    // Reset the attack trigger after the animation finishes
+    StartCoroutine(ResetAttackTrigger());
+    StartCoroutine(AttackCooldownCoroutine());
+}
+
+private IEnumerator ResetAttackTrigger()
+{
+    yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+    animator.ResetTrigger("Attack");
+}
     private IEnumerator AttackCooldownCoroutine()
     {
         yield return new WaitForSeconds(attackCooldown);
