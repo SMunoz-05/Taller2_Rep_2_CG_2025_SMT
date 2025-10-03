@@ -96,17 +96,27 @@ public class Player : MonoBehaviour
         canAttack = false;
     
         // Animación de ataque
-        animator.SetTrigger("Attack");
+       animator.SetTrigger("Attack1");
     
         // Detectar enemigos en rango
         Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
     
         foreach (Collider2D enemy in enemiesInRange)
         {
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
-            if (enemyScript != null && !enemyScript.IsDead)
+            // Try to get GroundEnemy component
+            GroundEnemy groundEnemy = enemy.GetComponent<GroundEnemy>();
+            if (groundEnemy != null && !groundEnemy.IsDead)
             {
-                enemyScript.TakeDamage(attackDamage);
+                groundEnemy.TakeDamage(attackDamage);
+                continue;
+            }
+            
+            // Try to get FlyingEnemy component
+            FlyingEnemy flyingEnemy = enemy.GetComponent<FlyingEnemy>();
+            if (flyingEnemy != null && !flyingEnemy.IsDead)
+            {
+                flyingEnemy.TakeDamage(attackDamage);
+                continue;
             }
         }
     

@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
     }
 
     // NUEVO MÉTODO: Para cuando el Enemy muere
-    public void OnEnemyKilled(Enemy enemy)
+    public void OnEnemyKilled(MonoBehaviour enemy)
     {
         if (enemy == null) return;
 

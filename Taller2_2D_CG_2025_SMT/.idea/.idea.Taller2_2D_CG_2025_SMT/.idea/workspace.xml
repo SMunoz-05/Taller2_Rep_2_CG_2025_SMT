@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="447fc27c-d800-4425-ad42-3e1c92abbc5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Imagenes/teclas reales.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imagenes/teclas reales.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/level1/FlyingEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/level1/FlyingEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/level1/GroundEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/level1/GroundEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Taller2_2D_CG_2025_SMT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Taller2_2D_CG_2025_SMT/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CaballeroAnimations/CaballeroAnimacion.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CaballeroAnimations/CaballeroAnimacion.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Rubi/collectibles_treasure_ruby_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Rubi/collectibles_treasure_ruby_0.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1 Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1 Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/level1/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/level1/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/level1/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/level1/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2 Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2 Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSct/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSct/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/level1/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/level1/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/level2/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/level2/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/level1/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/level1/FlyingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/level1/GroundEnemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -112,6 +125,13 @@
       <workItem from="1758934269002" duration="246000" />
       <workItem from="1759161554529" duration="5610000" />
       <workItem from="1759188021517" duration="8627000" />
+      <workItem from="1759407238551" duration="391000" />
+      <workItem from="1759408322779" duration="7397000" />
+      <workItem from="1759415765707" duration="2963000" />
+      <workItem from="1759420692125" duration="781000" />
+      <workItem from="1759427953505" duration="1246000" />
+      <workItem from="1759438216137" duration="3356000" />
+      <workItem from="1759444827871" duration="4534000" />
     </task>
     <servers />
   </component>
